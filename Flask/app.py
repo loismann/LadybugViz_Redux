@@ -12,16 +12,16 @@ CORS(app)
 
 @app.route("/")
 def hello():
-    return jsonify({'text':'Hello World!'})
+    return jsonify({'text':'Knock Knock?!'})
 
 class Employees(Resource):
     def get(self):
-        return {'employees': [{'id':1, 'name':'Balram'},{'id':2, 'name':'Tom'}]}
+        return {'assholes': [{'id':1, 'name':'Paul'},{'id':2, 'name':'Tim'}]}
 
 class Employees_Name(Resource):
     def get(self, employee_id):
         print('Employee id:' + employee_id)
-        result = {'data': {'id':1, 'name':'Balram'}}
+        result = {'suspicious': {'id':1, 'name':'Jon'}}
         return jsonify(result)
 
 
